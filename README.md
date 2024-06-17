@@ -8,6 +8,7 @@
 5. [Usage](#usage)
 6. [Configuration](#configuration)
 7. [Contact](#contact)
+8. [Output](#output)
 
 ## Introduction
 Welcome to our E-Commerce Website project! This project is designed to provide a robust, scalable, and customizable platform for online retail. It supports various features essential for a modern e-commerce experience, including user authentication, product management, and more.
@@ -81,3 +82,36 @@ Additional configuration options can be managed through the `.env` file and othe
 ## Contact
 For any questions, please contact:
 **Meghana:** meghanavjiet@gmail.com
+
+## Output
+
+**login/register**
+
+![Screenshot 2024-06-17 115531](https://github.com/meghana0308/e-commerce/assets/146119915/c221885b-ef5e-46d4-97d0-2f9c8fc30913)
+
+**homepage**
+
+![Screenshot 2024-06-17 120123](https://github.com/meghana0308/e-commerce/assets/146119915/dc5d63bf-28ee-42a5-be09-0f6f1998abbb)
+
+**cart**
+
+![Screenshot 2024-06-17 115649](https://github.com/meghana0308/e-commerce/assets/146119915/e8d08abd-70c7-42d2-8bf8-300655f0ebf4)
+
+**filter by category and price**
+
+![Screenshot 2024-06-17 115804](https://github.com/meghana0308/e-commerce/assets/146119915/3ae7a098-134e-4ee5-83ca-772da73281b6)
+
+**create category[admin]**
+
+![Screenshot 2024-06-17 115457](https://github.com/meghana0308/e-commerce/assets/146119915/46809632-e726-46ed-a0d5-f4febd2f4162)
+
+**create product[admin]**
+
+![Screenshot 2024-06-17 114846](https://github.com/meghana0308/e-commerce/assets/146119915/c677c9f2-77c4-4b14-aba4-5eddfa243fe5)
+
+**all categories**
+
+![Screenshot 2024-06-17 115722](https://github.com/meghana0308/e-commerce/assets/146119915/ed455813-e644-4974-8eb5-5fe725ceb617)
+
+
+
