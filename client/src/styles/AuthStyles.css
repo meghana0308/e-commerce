@@ -1,0 +1,103 @@
+/* General styles */
+body {
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form container styles */
+.form-container {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  flex-direction: column;
+  background-color: #e0f899;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Form styles */
+.form-container form {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #f3f4e2;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Form title styles */
+.form-container form .title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* Input field styles */
+.form-container form input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: calc(100% - 22px); /* Adjusting for padding */
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+/* Button styles */
+.form-container form button {
+  border: none;
+  border-radius: 5px;
+  background-color: #b1d7ff;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-container form button:hover {
+  background-color: #aacef5;
+}
+
+/* Forgot password button styles */
+.forgot-btn {
+  background-color: transparent;
+  border: none;
+  color: #b1d0f1;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.forgot-btn:hover {
+  color: #aacef5;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .form-container {
+    margin-top: 40px;
+    padding: 10px;
+  }
+
+  .form-container form {
+    padding: 15px;
+  }
+
+  .form-container form .title {
+    font-size: 1.2em;
+  }
+
+  .form-container form input,
+  .form-container form button {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,174 @@
+/* Banner */
+.banner-img {
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Home Page */
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards */
+  gap: 20px; /* Add some spacing between cards */
+  padding: 20px;
+}
+
+.home-page .card {
+  flex: 1 1 300px; /* Flexbox properties for card responsiveness */
+  max-width: 300px; /* Max width to maintain consistency */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Ensure content fits within the card */
+}
+
+.home-page .card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.home-page .card-img-top {
+  height: auto; /* Set height to auto to maintain aspect ratio */
+  width: 100%; /* Ensure image fills the entire width of its container */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.home-page .card-name-price {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-page .card-name-price h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #333; /* Dark grey */
+}
+
+.home-page .card-price {
+  color: #4caf50; /* Green */
+  font-weight: bold;
+}
+
+.home-page .card-text {
+  padding: 0 15px 15px 15px;
+  color: #666; /* Dark grey */
+}
+
+.home-page button {
+  border: none;
+  border-radius: 5px;
+  background-color: #faaca8; /* Light red */
+  color: #0b0b0b; /* Dark grey */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 15px;
+  width: calc(100% - 30px); /* Full width within padding */
+}
+
+.home-page button:hover {
+  background-color: #f1b2ac; /* Darker red on hover */
+}
+
+/* Filters */
+.filters {
+  position: fixed;
+  top: 100px; /* Adjust as needed */
+  left: 0;
+  width: 200px; /* Adjust width as needed */
+  padding: 20px;
+  background-color: #fff; /* White */
+  border-right: 1px solid #ccc; /* Light grey */
+  overflow-y: auto; /* Enable vertical scrolling for filters */
+  max-height: calc(100vh - 100px); /* Limit the max height to prevent overflow */
+  box-sizing: border-box;
+}
+
+.filters h4 {
+  color: #333; /* Dark grey */
+  border-bottom: 1px solid #ccc; /* Light grey */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Display filter options horizontally */
+.filters .ant-checkbox-group,
+.filters .ant-radio-group,
+.filters .category-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Adjust spacing between filter options */
+.filters .ant-checkbox-wrapper,
+.filters .ant-radio-wrapper,
+.filters .category-option {
+  margin: 5px;
+}
+
+.filters button {
+  background-color: #000; /* Black */
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* White */
+  font-weight: bold;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.filters button:hover {
+  background-color: #222; /* Darker black on hover */
+}
+
+/* Load More Button */
+.loadmore {
+  color: #4caf50; /* Green */
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 10px;
+  }
+
+  .home-page .card {
+    flex: 1 1 45%; /* Adjust card width for smaller screens */
+    max-width: none;
+  }
+
+  .filters {
+    width: 100%;
+    position: relative;
+    top: 0;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page .card {
+    flex: 1 1 100%; /* Full width for smallest screens */
+  }
+
+  .home-page .card-img-top {
+    height: 150px; /* Adjust image height for small screens */
+  }
+}
